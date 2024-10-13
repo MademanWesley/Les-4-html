@@ -19,10 +19,21 @@ Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services")
 Grijs #7A7A7A (voor de service-tegel tekst);
 */
 
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
 
-
-
-
+/* ------------------------------- 1. Global Styles -------------------------------- */
 .outer-container {
     width: 100%;
     display: flex;
@@ -32,11 +43,38 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 
 .inner-container {
     border: 1px dotted black;
-    flex-basis: 400px;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
+    text-align: center;
     padding: 20px 0;
     margin: 0 12px;
+}
+
+
+.section-header {
+    background-color: #5722CD;
+}
+
+.section-main {
+    background-color: white;
+}
+
+.section-footer {
+    background-color: #5722CD;
+}
+
+/* --------------- 4.1 Header ------------------------- */
+.header-text {
+    border: 1px dotted black;
+    font-size: 35px;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 12px;
+    width: 400px;
 }
 
 .navbar ul{
@@ -54,14 +92,9 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     text-decoration: none;
 
 }
-.section-1 {
-    background-color: #5722CD;
-}
 
-.section-2 {
-    background-color: orange;
-}
 
-.section-3 {
-    background-color: brown;
+.stripe-icon {
+justify-content: center;
+    padding: 30px;
 }
