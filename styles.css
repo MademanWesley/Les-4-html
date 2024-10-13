@@ -43,7 +43,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 
 .inner-container {
     border: 1px dotted black;
-    flex-basis: 1200px;
+    flex-basis: 1700px;
     flex-grow: 0;
     flex-shrink: 1;
     text-align: center;
@@ -58,6 +58,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 
 .section-main {
     background-color: white;
+    display: flex;
 }
 
 .info-content {
