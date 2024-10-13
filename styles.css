@@ -60,6 +60,16 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     background-color: white;
 }
 
+.info-content {
+    border: 1px dotted black;
+    flex-basis: 1200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 20px 0;
+    margin: 0 12px;
+    display: inline-block;
+}
+
 .section-footer {
     background-color: #5722CD;
 }
@@ -67,6 +77,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 /* --------------- 4.1 Header ------------------------- */
 .header-text {
     border: 1px dotted black;
+    font-family: merriweather, sans-serif;
     font-size: 35px;
     flex-basis: 800px;
     flex-grow: 0;
@@ -97,4 +108,15 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 .stripe-icon {
 justify-content: center;
     padding: 30px;
+}
+
+/*img {
+    width: 100%;
+}*/
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 100%;
 }
