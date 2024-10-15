@@ -39,6 +39,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /*flex-direction: column;*/
 }
 
 .inner-container {
@@ -47,6 +48,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     flex-grow: 0;
     flex-shrink: 1;
     text-align: center;
+    align-items: center;
     padding: 20px 0;
     margin: 0 12px;
 }
@@ -56,14 +58,14 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     background-color: #5722CD;
 }
 
-.section-main {
+.section-2 {
     background-color: white;
-    display: flex;
+    display: flex;;
 }
 
 .info-content {
     border: 1px dotted black;
-    flex-basis: 1200px;
+    flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 1;
     padding: 20px 0;
@@ -71,7 +73,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     display: inline-block;
 }
 
-.section-footer {
+.section-form {
     background-color: #5722CD;
 }
 
@@ -109,6 +111,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 .stripe-icon {
 justify-content: center;
     padding: 30px;
+    position: relative;
 }
 
 /*img {
@@ -120,4 +123,25 @@ justify-content: center;
     flex-grow: 0;
     flex-shrink: 1;
     width: 100%;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #ED4385;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+}
+
+/*.button:hover {*/
+/*    background-color: #ED4385;*/
+/*}*/
+
+.footer-text {
+    background-color: black;
+    text-decoration-color: white;
+    text-align: center;
 }

@@ -8,9 +8,7 @@
     <title>HTML - Les 4</title>
 </head>
 <body>
-<header>
-
-    <section class="outer-container section-header">
+<header class="outer-container section-header">
         <div class="inner-container">
             <div class="navbar">
                 <ul>
@@ -20,16 +18,19 @@
                 </ul>
             </div>
         </div>
-    </section>
+</header>
+
+
     <section class="outer-container section-header">
         <div class="header-text">
             <h1>
                 Your website is an investment in the success of your business.
             </h1>
+
             <h2>
                 We are here to help you succeed.
             </h2>
-            Let's work together
+            <a href="#formulier" class="button">Let's work together</a>
             <div class="stripe-icon">
                 <img src="./assets/squiggle_line_stripe.svg" alt="stripe">
             </div>
@@ -59,13 +60,14 @@
                 You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.
             </h4>
             </div>
+
             <span class="image-wrapper">
             <img src="assets/work-image-01.jpeg" alt="=work1">
       </span>
         </article>
-    </section>
 
-    <section class="outer-container section-main">
+
+    <section class="outer-container section-2">
         <article class="inner-container">
             <div class="info-content"
             <h2>
@@ -80,11 +82,9 @@
             <img src="assets/work-image-02.jpeg" alt="=work1">
       </span>
         </article>
-    </section>
 
-    <section class="outer-container section-main">
         <article class="inner-container">
-            <div class="info-content"
+            <div class="info-content">
             <h2>
                 Worth
             </h2>
@@ -98,16 +98,35 @@
         </article>
     </section>
 
-</main>
-<footer>
     <section>
-        <section class="outer-container section-footer">
+        <section class="outer-container section-form">
             <div class="inner-container">
-                <h1>
-                    Let's work together
-                </h1>
+                <h2>Let's work together</h2>
+                <form action="/verwerk_formulier" method="post">
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam" required>
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht" rows="4" required></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Verstuur">
+                </form>
             </div>
         </section>
+
+</main>
+<footer>
+    <section class="outer-container">
+        <div class="inner-container footer-text">
+            Business website opdracht © NOVI Hogeschool 2022
+        </div>
+    </section>
 </footer>
 </body>
 </html>
