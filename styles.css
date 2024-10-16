@@ -132,7 +132,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 /*}*/
 
 
-/*4.2 Introduction*/
+/*---------Introduction-------------*/
 
 .section-introduction {
 
@@ -151,7 +151,18 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     text-align: center;
 }
 
-/*Articles*/
+/*-------------Articles-----------*/
+
+.article-container {
+    border: 1px dotted black;
+    display: flex;
+   /* flex-direction: column;*/
+    align-items: center;
+    flex-basis: 1800px;
+    margin: 0 20px;
+
+
+}
 
 .section-cases {
     display: flex;
@@ -175,7 +186,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 .cases-image-wrapper {
     flex-basis: 800px;
     flex-grow: 0;
-    padding: 50px 100px 50px 20px;
+    padding: 50px 160px 50px 20px;
 }
 
 
