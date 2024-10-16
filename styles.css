@@ -34,96 +34,86 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+.h1, h2, h3, h4, h5, h6{
+    font-family: merriweather, sans-serif;
+}
+
+
 .outer-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*flex-direction: column;*/
+    width: 100%;
 }
 
 .inner-container {
     border: 1px dotted black;
-    flex-basis: 1700px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    margin: 0 12px;
+    flex-basis: 1200px;
+    margin: 0 20px;
 }
 
+.header-center-styling {
+    text-align: center;
+}
 
 .section-header {
     background-color: #5722CD;
 }
 
-.section-2 {
-    background-color: white;
-    display: flex;;
-}
 
-.info-content {
-    border: 1px dotted black;
-    flex-basis: 400px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    padding: 20px 0;
-    margin: 0 12px;
-    display: inline-block;
-}
 
 .section-form {
     background-color: #5722CD;
 }
 
-/* --------------- 4.1 Header ------------------------- */
-.header-text {
-    border: 1px dotted black;
-    font-family: merriweather, sans-serif;
-    font-size: 35px;
-    flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: center;
-    padding: 20px 0;
-    margin: 0 12px;
-    width: 400px;
-}
+/*--------navbar---------------*/
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 40px;
     text-align: right;
 }
 
-.navbar li{
+.navbar li {
     display: inline-block;
+    padding: 20px;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
 
 }
 
+/* --------------- 4.1 Header ------------------------- */
+.header-text h1 {
+    /*border: 1px dotted black;*/
+    font-family: merriweather, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+
+.header-text p {
+    color: white;
+    font-size: 50;
+}
+
+
 
 .stripe-icon {
-justify-content: center;
+    justify-content: center;
     padding: 30px;
     position: relative;
+    margin: 50px 0
 }
 
-/*img {
-    width: 100%;
-}*/
-
-.image-wrapper {
-    flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    width: 100%;
-}
 
 .button {
     display: inline-block;
@@ -134,14 +124,61 @@ justify-content: center;
     text-decoration: none;
     border-radius: 30px;
     border: none;
+    margin: 40px 0;
 }
 
 /*.button:hover {*/
 /*    background-color: #ED4385;*/
 /*}*/
 
+
+/*4.2 Introduction*/
+
+.section-introduction {
+
+    text-align: center;
+    color: #5722CD;
+    line-height: 1.5;
+}
+
+.section-introduction p{
+    padding: 20px 0;
+}
+
 .footer-text {
     background-color: black;
-    text-decoration-color: white;
+    color: white;
     text-align: center;
 }
+
+/*Articles*/
+
+.section-cases {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.section-cases-article{
+    background-color: white;
+    display: flex;;
+    /*margin: ;*/
+}
+
+.cases-text-wrapper {
+    border: 1px dotted black;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+.cases-image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    padding: 50px 100px 50px 20px;
+}
+
+
+/*img {
+    width: 100%;
+}*/

@@ -8,121 +8,126 @@
     <title>HTML - Les 4</title>
 </head>
 <body>
-<header class="outer-container section-header">
-        <div class="inner-container">
+<div class="outer-container section-header">
+    <nav>
+        <div class="inner-container section-header">
             <div class="navbar">
                 <ul>
                     <li><a href="#case-studies">Case Studies</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
-</header>
+    </nav>
+</div>
 
 
-    <section class="outer-container section-header">
-        <div class="header-text">
-            <h1>
-                Your website is an investment in the success of your business.
-            </h1>
-
-            <h2>
-                We are here to help you succeed.
-            </h2>
-            <a href="#formulier" class="button">Let's work together</a>
-            <div class="stripe-icon">
-                <img src="./assets/squiggle_line_stripe.svg" alt="stripe">
-            </div>
-        </div>
-    </section>
+<header class="header-center-styling section-header">
+    <div class="header-text">
+        <h1>
+            Your website is an investment in the success of your business.
+        </h1>
+        <p>
+            We are here to help you succeed.
+        </p>
+        <a href="#formulier" class="button">Let's work together</a>
+    </div>
+    <span class="stripe-icon">
+            <img src="./assets/squiggle_line_stripe.svg" alt="stripe">
+        </span>
+    </div>
 </header>
 
 <main>
-    <section class="outer-container section-main">
-        <div class="inner-container">
-            <h3>
-                Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful visual
-                designs to help your business grow. We see every project as a fresh opportunity, pushing ourselves to
-                create
-                new digital experiences. Have a question? Click here to contact us!
-            </h3>
+    <section class="outer-container">
+        <div class="inner-container section-introduction">
+            <h2>
+                <p> Rekupe is a digital agency in Los Angeles.</P>
+                <p>We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</p>
+                <p>We see every project as a fresh opportunity, pushing ourselves to
+                    create
+                    new digital experiences.</P>
+                <p>Have a question? Click here to contact us!</p>
+            </h2>
         </div>
     </section>
 
-    <section class="outer-container section-main">
+    <section class="outer-container section-cases">
         <article class="inner-container">
-            <div class="info-content"
-            <h2>
-                Rolling Stone
-            </h2>
-            <h4>
-                You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.
-            </h4>
+            <div class="cases-text-wrapper">
+                <h2>
+                    Rolling Stone
+                </h2>
+                <img src="assets/squiggle_line.svg" alt="squigleline">
+                <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
+                    icon.</p>
             </div>
 
-            <span class="image-wrapper">
+            <span class="cases-image-wrapperimage-wrapper">
             <img src="assets/work-image-01.jpeg" alt="=work1">
-      </span>
-        </article>
-
-
-    <section class="outer-container section-2">
-        <article class="inner-container">
-            <div class="info-content"
-            <h2>
-                Variety
-            </h2>
-            <h4>
-                Variety is an industry leader for breaking entertainment news, reviews and box office results with
-                archive of content dating back to 1905.
-            </h4>
-            </div>
-            <span class="image-wrapper">
-            <img src="assets/work-image-02.jpeg" alt="=work1">
-      </span>
-        </article>
-
-        <article class="inner-container">
-            <div class="info-content">
-            <h2>
-                Worth
-            </h2>
-            <h4>
-                A global media platform connecting a community that embraces worth beyond wealth.
-            </h4>
-            </div>
-            <span class="image-wrapper">
-            <img src="assets/work-image-03.jpeg" alt="=work1">
-      </span>
+            </span>
         </article>
     </section>
 
-    <section>
-        <section class="outer-container section-form">
-            <div class="inner-container">
-                <h2>Let's work together</h2>
-                <form action="/verwerk_formulier" method="post">
-                    <label for="naam">Naam:</label>
-                    <input type="text" id="naam" name="naam" required>
-                    <br><br>
+    <!--
+            <section class="outer-container section-cases-article">
+                <article class="inner-container">
+                    <div class="cases-text-wrapper">
+                        <h2>
+                            Variety
+                        </h2>
+                        <h4>
+                            Variety is an industry leader for breaking entertainment news, reviews and box office results
+                            with
+                            archive of content dating back to 1905.
+                        </h4>
+                    </div>
+                    <span class="cases-image-wrapper">
+                <img src="assets/work-image-02.jpeg" alt="=work1">
+          </span>
+                </article>-->
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
+    <!--  <article class="inner-container">
+          <div class="info-content">
+              <h2>
+                  Worth
+              </h2>
+              <h4>
+                  A global media platform connecting a community that embraces worth beyond wealth.
+              </h4>
+          </div>
+          <span class="image-wrapper">
+      <img src="assets/work-image-03.jpeg" alt="=work1">
+</span>
+      </article>
+  </section>
 
-                    <label for="bericht">Bericht:</label>
-                    <textarea id="bericht" name="bericht" rows="4" required></textarea>
-                    <br><br>
+  <section>
+      <section class="outer-container section-form">
+          <div class="inner-container">
+              <h2>Let's work together</h2>
+              <form action="/verwerk_formulier" method="post">
+                  <label for="naam">Naam:</label>
+                  <input type="text" id="naam" name="naam" required>
+                  <br><br>
 
-                    <input type="submit" value="Verstuur">
-                </form>
-            </div>
-        </section>
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br><br>
 
+                  <label for="bericht">Bericht:</label>
+                  <textarea id="bericht" name="bericht" rows="4" required></textarea>
+                  <br><br>
+
+                  <input type="submit" value="Verstuur">
+              </form>
+          </div>
+      </section>
+-->
 </main>
 <footer>
-    <section class="outer-container">
+    <section class="outer-container footer-text">
         <div class="inner-container footer-text">
             Business website opdracht © NOVI Hogeschool 2022
         </div>
